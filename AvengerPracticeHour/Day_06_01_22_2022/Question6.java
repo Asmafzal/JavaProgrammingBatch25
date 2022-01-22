@@ -6,14 +6,13 @@ public class Question6 {
     public static void main(String [] args) {
 
         int [] arr = {4,1,0,8,-9,3,4};
-        // int min = minNum(arr);
+         int min = minNum(arr);
+        System.out.println("min = " + min);
     }
 
-
-    /* line 3 */ {
-
-     //   Arrays.sort (nums);
-      //  return nums[0];
-
+    public static int minNum(int[] nums) {//should be static because we have to call it in a a static method
+        Arrays.sort (nums);
+        return nums[0];
     }
+
 }

@@ -13,10 +13,10 @@ public class Question3 {
 
     public static void main(String[] args) {
         Question3 obj = new Question3();
-        obj.m(5);//0
-        obj.m();//1
-        obj.count += 10;//11
-        obj.m(2);//22
+        obj.m(5);
+        obj.m();
+        obj.count += 10;
+        obj.m(2);
         System.out.print(obj.count);
 
 

@@ -6,18 +6,18 @@ public class Sport {
     boolean teamBased;
 
     public void makeSport (String name, int players, boolean teams){
-        this.name = name;
+        name = name;
         numOfPlayers = players;
         teamBased = teams;
     }
 
     public String toString(){
-        String msg = "The sport is " + name + " and has " +
-                numOfPlayers + " players total" ;
+        String msg = "The sport is" + name + "and has" +
+                numOfPlayers + "players total" ;
         if(teamBased){
-            msg += "divided into teams";//true
+            msg += "divided into teams";
         } else {
-            msg += "but there is no teams";//false
+            msg += "but there is no teams";
         }
         return msg;
     }

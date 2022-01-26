@@ -5,7 +5,6 @@ public class RoomObject {
         Room room = new Room();
         room.setInfo(5, 11);
         System.out.print(room);
-       // System.out.println(room.print());
 
 
     }

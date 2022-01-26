@@ -4,8 +4,8 @@ public class Pond {
 
     static Water water;
 
-    public Pond(String color)  {
-       water = new Water(color);
+    /* line 5 */ {
+     //   water = new Water(color);
     }
 
 

@@ -19,7 +19,7 @@ public class MapPractice2 {
         map.put("Anderson",125000);
         map.put("Steven", 135000);
 
-        //1.1 who has the maximum and minimum salary?
+    //  1 who has the maximum and minimum salary?
         String name1 = "";
         int maxSalary = Integer.MIN_VALUE;
 
@@ -30,57 +30,67 @@ public class MapPractice2 {
             String eachKey = pair.getKey();
             Integer eachValue = pair.getValue();
 
-            if (eachValue > maxSalary){
+            if(eachValue > maxSalary){
                 maxSalary = eachValue;
                 name1 = eachKey;
             }
 
-            if (eachValue < minSalary){
+            if(eachValue < minSalary){
                 minSalary = eachValue;
                 name2 = eachKey;
             }
+
         }
+
+
         System.out.println(name1);
         System.out.println(name2);
 
-        System.out.println("-----------------------------------------------");
+
+        System.out.println("----------------------------------------------");
 
         //how many employees has the salary between 120k ~ 150K?
 
         int count = 0;
+
         for (Integer eachValue : map.values()) {
-            if (eachValue >= 120000 && eachValue <= 150000){
+            if(eachValue >= 120000 && eachValue <= 150000){
                 count++;
             }
         }
-        System.out.println("count = " + count);
 
-        System.out.println("---------------------------------------------------");
+        System.out.println(count);
 
-        //1.4 display the names of the employees who are making less than 118k?
+
+        System.out.println("----------------------------------------------");
+
+     //   1.4 display the names of the employees who are making less than 118k?
 
         for (Map.Entry<String, Integer> pair : map.entrySet()) {
-            if (pair.getValue() < 118000){
+            if( pair.getValue() < 118000){
                 System.out.println(pair.getKey());
             }
         }
 
-        System.out.println("---------------------------------------------------");
+        System.out.println("----------------------------------------------");
 
-       // 1.5 increase the salary of each employee by 10K
+        // 1.5 increase the salary employee by 10K if the current salary of employee is less than 120K
 
+        System.out.println(map);
 
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            if(entry.getValue() < 120000){
+                entry.setValue(entry.getValue()+10000);
+            }
+        }
 
-
-
-
-
-
-
+        System.out.println(map);
 
     }
 
+
 }
+
 /*
 1. Given the following map that contains the employee name and thier salary:
      Map<String, Integer> map = new LinkedHashMap<>();
@@ -100,14 +110,4 @@ public class MapPractice2 {
     1.3 how many employees has the salary between 120k ~ 150K?
     1.4 display the names of the employees who are making less than 118k?
     1.5 increase the salary of each employee by 10K
-
-
-
-2. Wirte a program that can return the freuqency of characters
-        Not: MUST use map
-
-        Ex: str = "bbcccaaaaa"
-
-        output:
-            {b=2, c=3, a=5}
  */

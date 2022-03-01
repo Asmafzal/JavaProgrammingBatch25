@@ -13,33 +13,41 @@ public class MapPractice3 {
         map.put("Antony", 100000);
         map.put("Jimmy", 115000);
         map.put("Jalil", 145000);
-        map.put("James", 110000);
-        map.put("Conor", 145000);
-        map.put("Josh", 117000);
-        map.put("Cory", 118000);
+        map.put("James", 145000);
+        map.put("Conor", 85000);
+        map.put("Josh", 145000);
+        map.put("Cory", 145000);
         map.put("Anderson",125000);
         map.put("Steven", 135000);
 
-        //display the names of all employess who have maximum salaries
+        // displays the names of all employess who has the maximum salaries
 /*
         int maxSalary = Integer.MIN_VALUE;
-        for (Integer eachValue : map.values()) {
-            if (eachValue>maxSalary){
+
+        for ( Integer eachValue : map.values() ) {
+            if(eachValue > maxSalary){
                 maxSalary = eachValue;
             }
         }
 
- */
-        int maxSalary = Collections.max(map.values());
+*/
+
+        int maxSalary = Collections.max( map.values() );
 
         System.out.println("maxSalary = " + maxSalary);
 
         for (Map.Entry<String, Integer> pair : map.entrySet()) {
-            if (pair.getValue() == maxSalary){
+            if(pair.getValue() == maxSalary){
                 System.out.println(pair.getKey());
             }
         }
 
 
+
+
+
+
     }
+
+
 }

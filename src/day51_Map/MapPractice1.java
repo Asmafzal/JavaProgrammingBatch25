@@ -23,38 +23,48 @@ public class MapPractice1 {
         employeeMap.put("Marika", "F");
 
       //  1. Update the "M" to Male and "F" to Female
-        for (Map.Entry<String, String> entry : employeeMap.entrySet()) {
-            if (entry.getValue().equalsIgnoreCase("m")) {
-                entry.setValue("Male");
-                // employeeMap.replace(entry.getKey(), "Male");
+/*
+        for (String key : employeeMap.keySet()) {
+            if(employeeMap.get(key).equalsIgnoreCase("m") ){
+                employeeMap.replace(key, "Male");
             }
-            if (entry.getValue().equalsIgnoreCase("f")) {
-                entry.setValue("Female");
+
+            if(employeeMap.get(key).equalsIgnoreCase("f")){
+                employeeMap.replace(key, "Female");
             }
         }
- /*       for (String s : employeeMap.keySet()) {
-            if (employeeMap.get(s).equalsIgnoreCase("m")){
-                employeeMap.replace(s, "Male");
-            }
-            if (employeeMap.get(s).equalsIgnoreCase("f")){
-                employeeMap.replace(s, "Female");
-            }
 */
+
+        for (Map.Entry<String, String> entry : employeeMap.entrySet()) {
+            if(entry.getValue().equalsIgnoreCase("m") ){
+                 entry.setValue("Male");
+             //    employeeMap.replace(entry.getKey() , "Male");
+            }
+
+            if(entry.getValue().equalsIgnoreCase("f") ){
+                entry.setValue("Female");
+                //    employeeMap.replace(entry.getKey() , "Female");
+            }
+
+
+        }
+
+
         System.out.println(employeeMap);
 
-        System.out.println("_______________________________________________________________");
+        System.out.println("--------------------------------------");
 
-
-        //  2. Display the names of all female employees
+      //  2. Display the names of all female employees
 
         for (Map.Entry<String, String> eachPair : employeeMap.entrySet()) {
             String eachKey = eachPair.getKey();
             String eachValue = eachPair.getValue();
-            if (eachValue.equals("Female")){
+
+            if(eachValue.equals("Female")){
                 System.out.println(eachKey);
             }
-        }
 
+        }
 
 
 

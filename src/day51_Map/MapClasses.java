@@ -22,7 +22,7 @@ public class MapClasses {
         linkedHashMap.put(3, "Jack");
         linkedHashMap.put(40, "Emma");
         linkedHashMap.put(5, "Isabella");
-
+        //the insertion order of the linkedhashmap is preserved
 
         Map<Integer, String> map3 = new TreeMap<>();
 

@@ -1,5 +1,6 @@
 package day51_Map;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
@@ -16,9 +17,9 @@ public class MapPractice4 {
         */
 
         ArrayList<String> group1 = new ArrayList<>(Arrays.asList("Zuhal", "Sinem", "Asma", "Zorig", "Oleksandr", "Tatiana", "Foziya", "Muzaffer", "Kidane", "Ariuntuul", "Jazmine", "Sabiha"));
-        ArrayList<String> group2 = new ArrayList<>(Arrays.asList("Margie","Vesele","Iryn","Nilufar","Aziza","Nurcan","Raika","Igor","Elif","Sana","Azamat"));
-        ArrayList<String> group24 = new ArrayList<>(Arrays.asList("Maria","Kristina","Amin","George","Layan","Amin","Yulia","George","Ayanle","Maxim","Nermin","Doughlas"));
-        ArrayList<String> group5= new ArrayList<>(Arrays.asList("Nazar","Veronika","Mikael","Layla","Badmaa","Zaeir","Anna","Tamara","Eugene"));
+        ArrayList<String> group2 = new ArrayList<>(Arrays.asList("Margie", "Vesele", "Iryn", "Nilufar", "Aziza", "Nurcan", "Raika", "Igor", "Elif", "Sana", "Azamat"));
+        ArrayList<String> group24 = new ArrayList<>(Arrays.asList("Maria", "Kristina", "Amin", "George", "Layan", "Amin", "Yulia", "George", "Ayanle", "Maxim", "Nermin", "Doughlas"));
+        ArrayList<String> group5 = new ArrayList<>(Arrays.asList("Nazar", "Veronika", "Mikael", "Layla", "Badmaa", "Zaeir", "Anna", "Tamara", "Eugene"));
         ArrayList<String> group19 = new ArrayList<>(Arrays.asList("Andrii", "Azizozen", "MaryJo", "Mungun", "Neira", "Sultan", "Tahmina", "Yulya", "Munu", "Yunus"));
         //pair : ID & names of students
 
@@ -37,6 +38,18 @@ public class MapPractice4 {
  */
 
         System.out.println(groups.get(2).get(1));
-    }
 
+        System.out.println("---------------------------------------------------");
+
+        for (ArrayList<String> eachGroup : groups.values()) {
+            for (String eachName : eachGroup) {
+                System.out.println(eachName);
+            }
+        }
+
+    }
 }
+
+
+
+

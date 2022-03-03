@@ -10,6 +10,7 @@ public class UniqueCharacters {
     public static void main(String[] args) {
 
         String str = "aabcccdeeeef";
+
         String[] arr = str.split("");
 
         Map<String, Integer> result = new LinkedHashMap<>();//keeps the insertion order
@@ -24,11 +25,17 @@ public class UniqueCharacters {
     }
 }
 /*
- Write a program that can find the unique characters from a String
+
+
+/*
+1. Write a program that can find the unique characters from a String
+
 
 			Ex:
 					str = "aabcccdeeeef";
 
 			output:
 					{b=1, d=1, f=1}
+
  */
+

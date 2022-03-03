@@ -21,6 +21,7 @@ Map (I): pari of collection
 
 		Hashtable (C): both key and value can NOT be null
 						Maintains the random order
+						synchronized
 
 
 Methods of Map: 
@@ -56,11 +57,6 @@ Methods of Map:
 
 
 
-
-List< Map<String,Integer> >
-
-
-
-
+Enum: a number of things
 
 

@@ -1,24 +1,28 @@
 package day52_Map_FunctionalInterface;
 
+import java.util.List;
+
 public class Test2 {
+
     public static void main(String[] args) {
-        MySecondFunctionalInterface<String> printEach;
-        printEach = s -> {
-            for (int i = 0; i < s.length(); i++) {
-                System.out.println(s.charAt(i));
+
+        MySecondFunctionalInterface<String> printEach = s -> {
+            for (String each : s.split("")) {
+                System.out.println(each);
             }
         };
+
         printEach.test("Wooden Spoon");
 
 
+        MySecondFunctionalInterface<Integer> cube = n -> System.out.println(n*n*n);
 
-        MySecondFunctionalInterface<Integer> cube = n -> {
-            System.out.println(n*n*n);
-        };
-        cube.test(3);
+        cube.test(5);
 
 
 
 
     }
+
+
 }

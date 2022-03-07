@@ -90,15 +90,15 @@ public class MapPractice {
 
         for (Map<String, Double> eachUnit : allUnits) {
             for (Map.Entry<String, Double> entry : eachUnit.entrySet()) {
-                    if(entry.getValue() > max){
-                        max = entry.getValue();
-                        name1 = entry.getKey();
-                    }
+                if (entry.getValue() > max) {
+                    max = entry.getValue();
+                    name1 = entry.getKey();
+                }
 
-                    if(entry.getValue() < min){
-                        min = entry.getValue();
-                        name2 = entry.getKey();
-                    }
+                if (entry.getValue() < min) {
+                    min = entry.getValue();
+                    name2 = entry.getKey();
+                }
 
             }
         }
@@ -110,11 +110,10 @@ public class MapPractice {
         System.out.println("min = " + min);
 
 
-
-
     }
-
 }
+
+
 
 /*
 Given the following maps that contains the main java topics that we have covered during the course
